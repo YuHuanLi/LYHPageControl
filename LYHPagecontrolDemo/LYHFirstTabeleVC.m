@@ -6,14 +6,14 @@
 //  Copyright © 2015年 SXT. All rights reserved.
 //
 
-#import "FirstTabeleVC.h"
-#import "NewFeatureVC.h"
+#import "LYHFirstTabeleVC.h"
+#import "LYHNewFeatureVC.h"
 
-@interface FirstTabeleVC ()
+@interface LYHFirstTabeleVC ()
 @property (nonatomic, strong) NSArray *array;
 @end
 
-@implementation FirstTabeleVC
+@implementation LYHFirstTabeleVC
 - (void)viewDidLoad
 {
     self.view.backgroundColor = [UIColor orangeColor];
@@ -46,7 +46,7 @@
 }
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NewFeatureVC *newVC = [[NewFeatureVC alloc] initWithRow:indexPath.row];
+    LYHNewFeatureVC *newVC = [[LYHNewFeatureVC alloc] initWithRow:indexPath.row];
     [self.navigationController pushViewController:newVC animated:YES];
 }
 - (CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section

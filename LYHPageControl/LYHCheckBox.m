@@ -42,7 +42,7 @@
 - (void)initCheckBoxButton
 {
     self.checBoxButton = [[UIButton alloc]init];
-    self.checBoxButton.titleLabel.font = [UIFont systemFontOfSize:14];
+    self.checBoxButton.titleLabel.font = [UIFont systemFontOfSize:15];
     self.checBoxButton.selected = YES;
     _selecte = YES;
     [self.checBoxButton setImage:[UIImage imageNamed:@"new_feature_share_false"] forState:UIControlStateNormal];
@@ -56,6 +56,7 @@
 {
     [self setupCheckBox];
 }
+#pragma mark overwite setter
 - (void)setupCheckBox
 {
     self.checBoxButton.frame = self.bounds;

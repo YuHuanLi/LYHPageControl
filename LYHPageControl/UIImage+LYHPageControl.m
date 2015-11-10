@@ -1,15 +1,14 @@
 //
-//  UIImage+LYH.m
-//  WeiBo
+//  UIImage+LYHPageControl.m
+//  LYHPagecontrol
 //
-//  Created by 厉煜寰 on 15/10/23.
+//  Created by 厉煜寰 on 15/11/10.
 //  Copyright © 2015年 SXT. All rights reserved.
 //
 
-#import "UIImage+LYH.h"
+#import "UIImage+LYHPageControl.h"
 
-@implementation UIImage (LYH)
-
+@implementation UIImage (LYHPageControl)
 + (UIImage *)resizeImageWithName:(NSString *)name
 {
     return [UIImage resizeImageWithName:name left:0.5 top:0.5];

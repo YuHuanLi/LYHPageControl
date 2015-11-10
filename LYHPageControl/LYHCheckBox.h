@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-
-
 @interface LYHCheckBox : UIView
 /**
  *  提供checkbox后面的提示文字

@@ -6,23 +6,23 @@
 //  Copyright © 2015年 SXT. All rights reserved.
 //
 
-#import "NewFeatureVC.h"
+#import "LYHNewFeatureVC.h"
 #import "LYHPageControl.h"
 #import "LYHCheckBox.h"
-#import "UIImage+LYH.h"
+
 
 #define kWidth [UIScreen mainScreen].bounds.size.width
 #define kHeight [UIScreen mainScreen].bounds.size.height
 // 6.四舍五入函数
 #define WBDounble2Int(doubleNumber) (int)(doubleNumber+0.5)
 
-@interface NewFeatureVC ()<UIScrollViewDelegate,LYHPageControlDelegate>
-@property (nonatomic, weak) LYHPageControl *page;
+@interface LYHNewFeatureVC ()<UIScrollViewDelegate,LYHPageControlDelegate>
+@property (nonatomic, weak) LYHBasicPageControl *page;
 @property (nonatomic, strong) UIScrollView *scrolleView;
 @property (nonatomic, assign) NSInteger row;
 @end
 
-@implementation NewFeatureVC
+@implementation LYHNewFeatureVC
 
 - (instancetype)initWithRow:(NSInteger)row
 {
@@ -68,7 +68,7 @@
     // 添加图片
     for (int index=1; index<4; index++) {
         UIImageView *imageView = [[UIImageView alloc]init];
-        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"new_feature_%d",index]];
+        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"new_feature_%d-568h@2x",index]];
         CGFloat imageX = (index-1) * kWidth;
         CGFloat imageY = 0;
         CGFloat imageH = kHeight;
@@ -87,18 +87,18 @@
 {
     CGFloat centerX = kWidth * 0.5;
     CGFloat centerY = kHeight - 30 ;
-    LYHPageControl *page;
+    LYHBasicPageControl *page;
     switch (self.row) {
         case 0:{
-            page = [[LYHPageControl alloc] initWithStyel:LYHPageControlStyelDefault];
+            page = [[LYHPageControlHorizontal alloc] initWithStyel:LYHPageControlHorizontalTpyeDefault];
             break;
         }
         case 1:{
-            page = [[LYHPageControl alloc] initWithStyel:LYHPageControlStyelRectangle];
+            page = [[LYHPageControlHorizontal alloc] initWithStyel:LYHPageControlHorizontalTpyeRectangle];
             break;
         }
         case 2:{
-            page = [[LYHPageControl alloc] initWithStyel:LYHPageControlStyelMixRectanglePoint];
+            page = [[LYHPageControlHorizontal alloc] initWithStyel:LYHPageControlHorizontalTpyeMixRectanglePoint];
             break;
         }
         default:
@@ -148,7 +148,7 @@
     int currentPageInt = WBDounble2Int(currentPageDouble);
     self.page.currentPage = currentPageInt;
 }
-- (void)pageControl:(LYHPageControl *)pageControl changgeCurrentPage:(NSInteger)currentPage
+- (void)pageControl:(LYHBasicPageControl *)pageControl changgeCurrentPage:(NSInteger)currentPage
 {
     [UIView animateWithDuration:0.5f animations:^{
         self.scrolleView.contentOffset = CGPointMake(self.page.currentPage*kWidth, 0);

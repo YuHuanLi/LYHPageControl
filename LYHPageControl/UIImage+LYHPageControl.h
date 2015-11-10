@@ -1,15 +1,14 @@
 //
-//  UIImage+LYH.h
-//  WeiBo
+//  UIImage+LYHPageControl.h
+//  LYHPagecontrol
 //
-//  Created by 厉煜寰 on 15/10/23.
+//  Created by 厉煜寰 on 15/11/10.
 //  Copyright © 2015年 SXT. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (LYH)
-
+@interface UIImage (LYHPageControl)
 /**
  *  返回一张自由拉伸的图片
  *

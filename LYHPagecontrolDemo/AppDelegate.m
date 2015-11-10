@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "FirstTabeleVC.h"
+#import "LYHFirstTabeleVC.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.firstVC = [[FirstTabeleVC alloc]init];
+    self.firstVC = [[LYHFirstTabeleVC alloc]init];
     self.rootNC = [[UINavigationController alloc] initWithRootViewController:self.firstVC];
     self.window.rootViewController = self.rootNC;
     return YES;

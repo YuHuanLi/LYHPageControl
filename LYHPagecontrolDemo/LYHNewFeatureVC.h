@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NewFeatureVC.h
 //  LYHPagecontrol
 //
 //  Created by 厉煜寰 on 15/11/7.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface LYHNewFeatureVC : UIViewController
+- (instancetype)initWithRow:(NSInteger)row;
 @end
-

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@class FirstTabeleVC;
+@class LYHFirstTabeleVC;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) FirstTabeleVC *firstVC;
+@property (strong, nonatomic) LYHFirstTabeleVC *firstVC;
 @property (strong, nonatomic) UINavigationController *rootNC;
 
 @end
