@@ -54,10 +54,10 @@
 @property (nonatomic, strong) UIImage *currentPageImage;
 
 #pragma mark - 交给子类去实现的setter方法
-//- (void)setNumberOfPages:(NSInteger)numberOfPages; NS_REQUIRES_SUPER
-//- (void)setPageIndicatorTintColor:(UIColor *)pageIndicatorTintColor; NS_REQUIRES_SUPER
-//- (void)setCurrentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor; NS_REQUIRES_SUPER
-//- (void)setPageImage:(UIImage *)pageImage; NS_REQUIRES_SUPER
-//- (void)setCurrentPageImage:(UIImage *)currentPageImage; NS_REQUIRES_SUPER
+- (void)setNumberOfPages:(NSInteger)numberOfPages;
+- (void)setPageIndicatorTintColor:(UIColor *)pageIndicatorTintColor;
+- (void)setCurrentPageIndicatorTintColor:(UIColor *)currentPageIndicatorTintColor;
+- (void)setPageImage:(UIImage *)pageImage;
+- (void)setCurrentPageImage:(UIImage *)currentPageImage; 
 
 @end
