@@ -11,3 +11,5 @@
 > * LYHPageControlCurrentView.h 被选中的视图（里面包含一张图片）
 > * LYHBasicPageContrl.h 架构的基类，实现一些共有的方法，提供一下给子类实现的方法
 > * LYHPageControlHorizontal.h 水平方向的pageControl，目前提供三种风格，主要实现这个类完成自定义风格
+
+由于在创建仓库的时候没有创建MIT，后来也没有找到怎么补个证书。所以为了发布到cocoapods上，就把项目移到了https://github.com/YuHuanLi/YHPageControl 上了，这里以后应该不会更新了
